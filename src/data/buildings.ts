@@ -1,0 +1,80 @@
+import { Building } from "@/types";
+
+export const buildings: Building[] = [
+  // Parking
+  { id: "lot-a", name: "Lot A", lat: 33.88739670088401, lng: -117.88914531469347, category: "parking", aliases: [] },
+  { id: "lot-s", name: "Lot S", lat: 33.888228886602846, lng: -117.88657844066621, category: "parking", aliases: [] },
+  { id: "lot-g", name: "Lot G", lat: 33.88489786727004, lng: -117.88873493671419, category: "parking", aliases: [] },
+  { id: "lot-d", name: "Lot D", lat: 33.884122985837244, lng: -117.8878176212311, category: "parking", aliases: [] },
+  { id: "lot-r", name: "Lot R", lat: 33.88243570170432, lng: -117.88880467414857, category: "parking", aliases: [] },
+  { id: "lot-c", name: "Lot C", lat: 33.878324512029835, lng: -117.88885831832887, category: "parking", aliases: [] },
+  { id: "lot-ce", name: "Lot C East", lat: 33.87857391687398, lng: -117.88717389106752, category: "parking", aliases: [] },
+  { id: "lot-f", name: "Lot F", lat: 33.88019503059313, lng: -117.8830111026764, category: "parking", aliases: [] },
+  { id: "lot-h", name: "Lot H", lat: 33.88389196765335, lng: -117.88363873958588, category: "parking", aliases: [] },
+  { id: "lot-i", name: "Lot I", lat: 33.881513276187036, lng: -117.88304328918458, category: "parking", aliases: [] },
+  { id: "lot-j", name: "Lot J", lat: 33.884301677063824, lng: -117.88288772106172, category: "parking", aliases: [] },
+  { id: "state-parking", name: "State College Parking Structure", lat: 33.88307198598094, lng: -117.88857936859132, category: "parking", aliases: [] },
+  { id: "nutwood-parking", name: "Nutwood Parking Structure", lat: 33.879015383929314, lng: -117.888520359993, category: "parking", aliases: [] },
+  { id: "eastside-parking-1", name: "Eastside Parking Structure", lat: 33.88032863749295, lng: -117.88177728652956, category: "parking", aliases: [] },
+  { id: "eastside-parking-2", name: "Eastside Parking Structure 2", lat: 33.8812549729115, lng: -117.88164854049684, category: "parking", aliases: [] },
+  { id: "resident-hall-parking", name: "Resident Hall Parking", lat: 33.88429722371123, lng: -117.88131058216096, category: "parking", aliases: [] },
+  { id: "arboretum-parking", name: "Fullerton Arboretum Parking", lat: 33.88802459849032, lng: -117.88519442081453, category: "parking", aliases: [] },
+
+  // Athletics
+  { id: "titan-stadium", name: "Titan Stadium", lat: 33.88667917748236, lng: -117.88701295852663, category: "athletics", aliases: [] },
+  { id: "goodwin-field", name: "Goodwin Field", lat: 33.88674152265657, lng: -117.88546800613405, category: "athletics", aliases: [] },
+  { id: "anderson-field", name: "Anderson Family Field", lat: 33.88598948108825, lng: -117.8851354122162, category: "athletics", aliases: [] },
+  { id: "track-field", name: "Track and Field", lat: 33.88515616006058, lng: -117.8862512111664, category: "athletics", aliases: ["Athletics"] },
+  { id: "titan-gym", name: "Titan Gym", lat: 33.88305472926149, lng: -117.886412143871, category: "athletics", aliases: [] },
+
+  // Services
+  { id: "student-rec", name: "Student Recreation Center", lat: 33.88312542723584, lng: -117.88763523101808, category: "services", aliases: ["Kinesiology and Health Science", "Division of Academic Affairs (VPAA)", "Come learn and practice research-based strategies for providing efficient, effective feedback on student writing."] },
+  { id: "univ-police", name: "University Police", lat: 33.88304136900779, lng: -117.88939476029556, category: "services", aliases: [] },
+  { id: "golleher", name: "Golleher Alumni House", lat: 33.88167861214047, lng: -117.88944840447586, category: "services", aliases: ["Alumni Engagement", "Faculty Development Center (FDC)"] },
+  { id: "kinesiology", name: "Kinesiology", lat: 33.882694001677216, lng: -117.8859078885762, category: "services", aliases: [] },
+  { id: "titan-union", name: "Titan Student Union", lat: 33.88177157868061, lng: -117.88864374160768, category: "services", aliases: [] },
+  { id: "bookstore", name: "Bookstore", lat: 33.88182502047821, lng: -117.88684129714967, category: "services", aliases: [] },
+  { id: "student-health", name: "Student Health and Counseling Center", lat: 33.88299683481367, lng: -117.88429856300355, category: "services", aliases: [] },
+  { id: "titan-house", name: "Titan House", lat: 33.88382962039666, lng: -117.88415908813478, category: "services", aliases: [] },
+  { id: "env-health", name: "Environmental Health and Safety", lat: 33.88504928033317, lng: -117.88942694664001, category: "facilities", aliases: [] },
+
+  // Academic
+  { id: "visual-art", name: "Visual Art", lat: 33.88039098730793, lng: -117.88849353790285, category: "academic", aliases: ["Theatre (THTR)", "College of the Arts (COTA)", "Art (ART)", "School of Music"] },
+  { id: "pollak-library", name: "Pollak Library", lat: 33.88142420618036, lng: -117.88534998893739, category: "academic", aliases: [] },
+  { id: "education-classroom", name: "Education Classroom", lat: 33.881352950108074, lng: -117.8842878341675, category: "academic", aliases: [] },
+  { id: "mccarthy", name: "McCarthy Hall", lat: 33.87966060090187, lng: -117.8854787349701, category: "academic", aliases: ["College of Natural Sci & Math (CNSM)", "Biological Science (BIOL)", "Mathematics (MATH)"] },
+  { id: "clayes", name: "Clayes Performing Arts Center", lat: 33.880569129385435, lng: -117.88666963577272, category: "academic", aliases: [] },
+  { id: "dbh", name: "Dan Black Hall", lat: 33.87909053887517, lng: -117.88583278656007, category: "academic", aliases: [] },
+  { id: "langsdorf", name: "Langsdorf Hall", lat: 33.87901037359725, lng: -117.88448095321657, category: "academic", aliases: ["Langsdorg Hall"] },
+  { id: "gordon", name: "Gordon Hall", lat: 33.87961606494317, lng: -117.88416981697083, category: "academic", aliases: [] },
+  { id: "humanities", name: "Humanities and Social Science", lat: 33.88040880153244, lng: -117.88415908813478, category: "academic", aliases: ["College of Hum & Social Sciences (CHSS)"] },
+  { id: "titan-hall", name: "Titan Hall", lat: 33.880872526755084, lng: -117.89009749889375, category: "academic", aliases: ["Extension & International Programs (EIP)"] },
+  { id: "college-park-west", name: "College Park West", lat: 33.88122435501452, lng: -117.89058029651643, category: "academic", aliases: ["College ParkWest"] },
+  { id: "mihaylo", name: "Mihaylo Hall", lat: 33.879072724375476, lng: -117.88348317146301, category: "academic", aliases: ["Mihaylo-Hall", "College of Bus & Econ (CBE)"] },
+  { id: "engineering-nw", name: "Engineering North West", lat: 33.88270290854949, lng: -117.88323640823366, category: "academic", aliases: [] },
+  { id: "engineering", name: "Engineering", lat: 33.882324365656906, lng: -117.88324177265169, category: "academic", aliases: [] },
+  { id: "engineering-sw", name: "Engineering South West", lat: 33.88195027456017, lng: -117.88324177265169, category: "academic", aliases: [] },
+  { id: "engineering-se", name: "Engineering South East", lat: 33.8819591815101, lng: -117.88268923759462, category: "academic", aliases: [] },
+  { id: "cs", name: "Computer Science", lat: 33.88231100528884, lng: -117.88264095783235, category: "academic", aliases: [] },
+  { id: "engineering-ne", name: "Engineering North East", lat: 33.8826717344924, lng: -117.88273215293886, category: "academic", aliases: [] },
+  { id: "ruby-gerontology", name: "Ruby Gerontology Center", lat: 33.88327739984853, lng: -117.88324713706972, category: "academic", aliases: ["Osher Lifelong Learning Institute (OLLI)", "This Osher Lifelong Learning Institute course is open to the public and is held in Mackey Auditorium in the Ruby Gerontology Center on the CSUF campus."] },
+  { id: "greenhouse", name: "Greenhouse Complex", lat: 33.879451838394594, lng: -117.88695931434631, category: "academic", aliases: [] },
+  { id: "arboretum", name: "Arboretum Museum", lat: 33.8881487296391, lng: -117.8841269016266, category: "academic", aliases: [] },
+
+  // Dining
+  { id: "gastronome", name: "Gastronome", lat: 33.88314825097883, lng: -117.88232982158662, category: "dining", aliases: [] },
+
+  // Housing
+  { id: "pine-hall", name: "Pine Hall", lat: 33.88359359108361, lng: -117.88278043270113, category: "housing", aliases: [] },
+  { id: "holly-hall", name: "Holly Hall", lat: 33.88385188727928, lng: -117.88163244724275, category: "housing", aliases: [] },
+  { id: "juniper-hall", name: "Juniper Hall", lat: 33.88412799614093, lng: -117.88234591484071, category: "housing", aliases: [] },
+  { id: "fig-hall", name: "Fig Hall", lat: 33.88449317100487, lng: -117.88165390491487, category: "housing", aliases: [] },
+  { id: "acacia-hall", name: "Acacia Hall", lat: 33.88458223780776, lng: -117.88253366947175, category: "housing", aliases: [] },
+  { id: "manzanita-hall", name: "Manzanita Hall", lat: 33.88504093037007, lng: -117.88263559341432, category: "housing", aliases: [] },
+  { id: "oak-hall", name: "Oak Hall", lat: 33.88506765024913, lng: -117.8821635246277, category: "housing", aliases: [] },
+  { id: "willow-hall", name: "Willow Hall", lat: 33.885415007915526, lng: -117.88243174552917, category: "housing", aliases: [] },
+  { id: "elm-hall", name: "Elm Hall", lat: 33.88513890321907, lng: -117.8816592693329, category: "housing", aliases: [] },
+  { id: "cypress-hall", name: "Cypress Hall", lat: 33.8857668174437, lng: -117.88237273693086, category: "housing", aliases: [] },
+  { id: "sycamore-valencia", name: "Sycamore/Valencia Hall", lat: 33.886074092933264, lng: -117.88169682025911, category: "housing", aliases: [] },
+  { id: "birch-hall", name: "Birch Hall", lat: 33.884542157757956, lng: -117.88215011358264, category: "housing", aliases: [] },
+];
