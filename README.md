@@ -8,14 +8,14 @@ Interactive campus map, event discovery, food directory, and contact directory f
 |---|---|---|
 | **Stack** | Vanilla HTML/CSS/JS, no build system | Next.js 16 + TypeScript + Tailwind CSS |
 | **Map** | Leaflet with 360 lines of manual marker code | react-leaflet with data-driven markers (~30 lines) |
-| **Routing** | Mapbox API with hardcoded secret token in public repo | Simple polyline + haversine distance calc, zero API keys |
+| **Routing** | Mapbox API with client-side token | Simple polyline + haversine distance calc, zero API keys |
 | **Events** | Selenium scraping → flat file → manual Gist upload | Direct fetch from CSUF's public JSON API, build-time download |
 | **Building Lookup** | ~1,800 lines of duplicated switch-case across 3 files | Single `findBuilding()` function + data array with aliases |
 | **Food/Contacts** | Static HTML tables with inline styles | Searchable, filterable React components with responsive grids |
 | **Styling** | Duplicated CSS across 3 files, no consistent theme | Tailwind utility classes, CSUF brand color system (navy/orange) |
 | **Responsive** | Desktop only | Mobile bottom sheet, collapsible sidebar, responsive card grids |
 | **Dependencies** | Vendored Leaflet source committed to repo | npm packages, .gitignore'd node_modules |
-| **Security** | Mapbox secret token (`sk.`) exposed in client JS | No API keys or tokens anywhere in the codebase |
+| **Security** | API token bundled in client JS | No API keys or tokens anywhere in the codebase |
 
 ## Tech Stack
 
